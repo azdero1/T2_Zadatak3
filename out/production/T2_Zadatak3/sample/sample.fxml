@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" minWidth="400.0" style="-fx-background-color: lightblue;" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+   </rowConstraints>
+   <children>
+      <Label contentDisplay="CENTER" text="Unesite rečenicu:" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="unos" minWidth="300.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#prepravi" style="-fx-background-color: lightgreen; -fx-border-color: black;" text="Prepravi rečenicu" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <TextField fx:id="ipis" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+</GridPane>
